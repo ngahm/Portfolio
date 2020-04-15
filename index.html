@@ -16,8 +16,8 @@
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img id="nav-logo" src="assets/s-logo-invert.png"
-                        class="d-inline-block align-top" alt="">Welcome</a>
+                <!-- <a class="navbar-brand" href="#"><img id="nav-logo" src="#"></a> -->
+                <a class="navbar-brand d-inline-block align-top" alt="">Welcome</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -28,26 +28,28 @@
                             <a class="nav-link" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
+                            <a class="nav-link" href="#About">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                            <a class="nav-link" href="#Portfolio">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link" href="#Contact">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
+
+
         <!---------------------------jumbotron/banner section-------------------------->
 
         <section class="jumbotron">
             <h1>Nicklaus Gahm</h1>
             <h3>Software Developer <span>&sdot;</span> Microsoft .NET Specialist</h3>
-            <button type="button" class="btn btn-primary btn-lg">GitHub</button>
-            <button type="button" class="btn btn-secondary btn-lg">Linkedin</button>
+            <a class="btn btn-light btn-lg" href="https://www.linkedin.com/in/nickgahm/" role="button">Linkedin</a>
+            <a class="btn btn-light btn-lg" href="https://github.com/ngahm" role="button">GitHub</a>
         </section>
 
         <!---------------------------about section-------------------------->
@@ -60,13 +62,17 @@
                     </div>
                 </div>
             </div> -->
-
-
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
         <div class="container-fluid padding">
-            <div class="row padding">
-                <div class="col-lg-6">
-                    <h2>My Story</h2>
+            <div class="row  justify-content-center"  >
+                <div class="col-lg-5">
+                    <h2 id="About">My Story</h2>
                     <p>After devoting 7 years to the transportation industry, the robust growth of the tech
                         industry was just too hard to ignore. My interest in coding stems from my drive to create
                         over maintain and the unique ability a technical skill brings to opening doors in an
@@ -80,8 +86,8 @@
                         willingness to grow their level of knowledge.</p>
                     <br>
                 </div>
-                <div class="col-lg-6">
-                    <img src="Assets/Bisig1.jpg" class="img-fluid">
+                <div class="col-lg-4">
+                    <img src="Assets/Bisig1.jpg" width="200" height="250" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -195,9 +201,17 @@
         </div> -->
 
         <!------------------------------Test Section---------------------------------->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
 
         <div class="container mt-3">
-            <div class="row">
+            <div class="row" >
+                <h2 id="Portfolio">Portfolio</h2>
                 <div class="card-deck">
                     <div class="card mb-4" style="min-width: 18rem; max-width: 18rem;">
                         <img class="card-img-top" src="Assets/real-estate-logo-design.jpg" alt="Card image cap">
@@ -214,7 +228,7 @@
                             <h5 class="card-title">Live Auction Software</h5>
                             <p class="card-text">A team project where we planned and implemented an N-Tier layered bidding service with both API and MVC frontend frameworks </p>
                             <p class="card-text"><small class="text-muted">Created March 2020</small></p>
-                            <a href="#" class="btn btn-primary">See Project</a>
+                            <a href="https://github.com/ngahm/AuctionExpress" class="btn btn-primary">See Project</a>
                         </div>
                     </div>
 
@@ -222,9 +236,9 @@
                         <img class="card-img-top img-fluid" alt="Card image cap" src="Assets/casinoslot.jpg">
                         <div class="card-body">
                             <h5 class="card-title">Slot Machine</h5>
-                            <p class="card-text">Students were tasked to create a game written to the console in C#</p>
+                            <p class="card-text"> Assignment to develop a game written in C# with a simple console interface</p>
                             <p class="card-text"><small class="text-muted">Created February 2020</small></p>
-                            <a href="#" class="btn btn-primary">See Project</a>
+                            <a href="https://github.com/ngahm/SlotMachine" class="btn btn-primary">See Project</a>
                         </div>
                     </div>
                     <div class="card mb-4" style="min-width: 18rem; max-width: 18rem;">
@@ -257,17 +271,7 @@
                             <h5 class="card-title">Resume</h5>
                             <p class="card-text">Current</p>
                             <p class="card-text"><small class="text-muted"></small></p>
-                            <a href="file:///C:/Users/gahms/Documents/Resume%20(M).pdf" class="btn btn-primary">Get</a>
-                        </div>
-                    </div>
-
-                    <div class="card mb-4" style="min-width: 18rem; max-width: 18rem;">
-                        <img class="card-img-top" src="Assets/real-estate-logo-design.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Property Management Software</h5>
-                            <p class="card-text">Developed and deployed a real estate software to the Azure cloud using MVC architecture</p>
-                            <p class="card-text"><small class="text-muted">Created April 2020</small></p>
-                            <a href="#" class="btn btn-primary">See Project</a>
+                            <a href="file:///C:/Users/gahms/Documents/Resume%20(N).pdf" class="btn btn-primary">Get</a>
                         </div>
                     </div>
 
@@ -433,11 +437,37 @@
         </section> -->
 
 
-        <div id="form" class="container">
-            <h2>Contact</h2>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <form class="container" action="https://formspree.io/xzbvaqba" method="Post">
+            <h2 id="Contact">Contact</h2>
+            <div class="form-group row"  >
+              <div class="col-sm-6">
+                    <input type="text" class="form-control" id="name" placeholder="*Name" >
+              </div>
+            </div>
+            <div class="form-group row"  >
+                <div class="col-sm-6">
+                    <input type="email" class="form-control" id="email" placeholder="*Email">
+                </div>
+            </div>
+            <div class="form-group row"  >
+                <div class="col-sm-6">
+                    <textarea name="message" id="" rows="5" placeholder="*Please enter your message..." required></textarea>
+                    <button type="submit">Send</button>
+                </div>
+            </div>
+        </form>
+
+        <!-- <div id="form" class="container" >
+            <h2 id="Contact">Contact</h2>
             <form action="https://formspree.io/xzbvaqba" method="Post">
                 <div class="row">
-                    <input type="text" class="form-control" id="name" placeholder="*Name">
+                    <input type="text" class="form-control" id="name" placeholder="*Name" >
                 </div>
                 <div class="row">
                     <input type="email" class="form-control" id="email" placeholder="*Email">
@@ -448,7 +478,8 @@
                     <button type="submit">Send</button>
                 </div>
             </form>
-        </div>
+        </div> -->
+
 
         <footer>
             <br>
