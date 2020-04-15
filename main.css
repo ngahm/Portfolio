@@ -1,0 +1,304 @@
+
+
+
+/*------------------------header/navbar section-------------------------------*/
+
+.navbar {
+    background-color: navy;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+#nav-logo {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.navbar-brand img {
+    transition: .5s;
+}
+
+.navbar-brand img:hover {
+    filter: opacity(50%);
+}
+
+.navbar-nav li a {
+    color: white !important;
+    font-weight: 600;
+    text-align: left;
+    transition: .4s;
+}
+
+.navbar-nav li a:hover {
+    text-shadow: 0 0 10px white, 0 0 20px white;
+}
+
+
+/*------------------------jumbotron/banner section-----------------------------------*/
+
+.jumbotron {
+    text-align: center;
+    background: url(Assets/pexels-cityphoto-830891.jpg); 
+    background-position: center center;
+    border-radius: 0;
+    color: black;
+    box-shadow: -3px 10px 10px rgb(66, 66, 66);
+ 
+}
+
+.jumbotron h1 {
+    font-size: 55px;
+}
+
+#main-logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 25px;
+    -webkit-animation: glow 20s linear infinite;
+    -moz-animation: glow 20s linear infinite;
+    animation: glow 20s linear infinite;
+}
+
+@keyframes glow {
+    0%, 20%, 40%, 60%, 80%, 100% { 
+        box-shadow: 0 0 0; 
+    }
+    10% {
+        box-shadow: 0 0 100px rgb(223, 9, 9);
+    }
+    30% {
+        box-shadow: 0 0 100px rgb(101, 178, 241);
+    }
+    50% {
+        box-shadow: 0 0 100px rgb(248, 181, 57);
+    }
+    70% {
+        box-shadow: 0 0 100px rgb(54, 231, 54);
+    }
+    90% {
+        box-shadow: 0 0 100px rgb(255, 255, 255);
+    }
+}
+
+#main-logo:hover {
+    animation: glow-hover .5s linear infinite;
+}
+
+@keyframes glow-hover {
+    0% { 
+        box-shadow: 0 0 0px white; 
+    }
+
+    25% { 
+        box-shadow: 0 0 50px white; 
+    }
+
+    50% { 
+        box-shadow: 0 0 100px white; 
+    }
+
+    75% {
+        box-shadow: 0 0 150px white;
+    }
+    100% {
+        box-shadow: 0 0 200px white;
+    }
+}
+
+/*------------------------about section-----------------------------------*/
+
+#about {
+    margin: 100px 0;
+    padding-top: 50px;
+    font-size: 20px;
+}
+
+#about-me-div {
+    text-align: right;
+}
+
+
+#about-me-text {
+    font-weight: 200;
+    text-align: justify;
+}
+
+#signature-div {
+    text-align: right;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+#signature {
+    width: 150px;
+    height: 100px;
+}
+
+#profile-pic {
+    width: 300px;
+    height: 400px;
+    box-shadow: 1px 10px 10px;
+}
+
+@media only screen 
+and (max-width : 768px) {
+    #about-me-div {
+        text-align: center;
+    }
+}
+
+.skills {
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: 1px 5px 5px;
+    border-radius: 50px;
+}
+
+.skills li {
+    padding-bottom: 10px;
+}
+
+.skill-list-title {
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: underline;
+    padding: 10px 0 0 10px;
+}
+
+/*------------------------portfolio section-----------------------------------*/
+
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+
+
+
+/* #portfolio {
+    background-color:navy;
+    color: white !important;
+
+}
+
+.portfolio-img-div {
+    text-align: center;
+
+}
+
+
+#portfolio img {
+    width: 250px;
+    height: 300px;
+    background-position: center, center;
+}
+
+.card-body{
+    font: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+
+}   */
+
+
+
+/* #wave-portfolio {
+    transform: rotate(180deg);
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: -1px;
+} */
+
+.projects {
+    margin-top: 50px;
+}
+
+.project-title {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.project-cover {
+    transition: .3s;
+    margin-bottom: 60px;
+    
+}
+
+.project-cover:hover {
+    transform: scale(1.25);
+    position: relative;
+    z-index: 1; 
+    background-color: black;
+    box-shadow: 0 0 20px 20px black;
+}
+
+.project-caption span {
+    visibility: visible;
+}
+
+.project-caption:hover span {
+    visibility: hidden;
+}
+
+/*------------------------contact section-----------------------------------*/
+
+#contact-title {
+    padding-top: 50px;
+}
+
+#form {
+    font-size: 20px;
+}
+
+input {
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border: 0;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+}
+
+textarea {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%
+}
+
+textarea:focus {
+    outline: none;
+}
+
+button {
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    background-color: transparent;
+    border: 1px solid black;
+    transition: .3s;
+}
+
+
+
+
+
+
+
+
